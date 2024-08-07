@@ -42,9 +42,67 @@ To learn more about developing your project with Expo, look at the following res
 - [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
 - [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
 
-## Join the community
+### /app Directory
 
-Join our community of developers creating universal apps.
+The [`/app`] directory is the main directory for your application code. It contains the following subdirectories and files:
 
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+- **_layout.tsx**: Layout component for the app.
+- **assets/**: Contains fonts and images used in the app.
+  - **fonts/**: Custom fonts used in the app.
+  - **images/**: Images used in the app.
+- **components/**: Reusable components for the app.
+  - **common/**: Commonly used components like `ExternalLink.tsx`.
+  - **navigation/**: Navigation-related components.
+- **constants/**: Constants used throughout the app, like `Colors.ts`.
+- **hooks/**: Custom hooks used in the app.
+- **index.tsx**: Entry point for the app.
+- **navigation/**: Navigation configuration and screens.
+- **screens/**: Screens for the app.
+
+
+/my-expo-app
+│
+├── /assets
+│   ├── /fonts
+│   └── /images
+│
+├── /src
+│   ├── /components
+│   │   ├── /common
+│   │   └── /specific
+│   │
+│   ├── /constants
+│   │   └── Colors.ts
+│   │
+│   ├── /hooks
+│   │   └── useCustomHook.ts
+│   │
+│   ├── /navigation
+│   │   └── AppNavigator.tsx
+│   │
+│   ├── /screens
+│   │   ├── HomeScreen.tsx
+│   │   └── DetailsScreen.tsx
+│   │
+│   ├── /services
+│   │   └── ApiService.ts
+│   │
+│   ├── /store
+│   │   ├── /actions
+│   │   ├── /reducers
+│   │   └── store.ts
+│   │
+│   ├── /styles
+│   │   └── globalStyles.ts
+│   │
+│   ├── /types
+│   │   └── index.d.ts
+│   │
+│   └── App.tsx
+│
+├── .gitignore
+├── app.json
+├── babel.config.js
+├── package.json
+├── tsconfig.json
+└── README.md
