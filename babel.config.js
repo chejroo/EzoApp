@@ -6,6 +6,7 @@ module.exports = function (api) {
       [
         'module-resolver',
         {
+          root: ['./src'],
           alias: {
             '@app': './app',
             '@assets': './app/assets',
@@ -16,7 +17,8 @@ module.exports = function (api) {
             '@screens': './app/screens'
           }
         }
-      ]
+      ],
+      require.resolve('expo-router/babel'),
     ]
   };
 };

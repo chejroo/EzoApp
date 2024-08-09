@@ -1,6 +1,6 @@
 {
   "name": "ezoapp",
-  "main": "expo-router/entry",
+  "main": "Main.tsx",
   "version": "1.0.0",
   "scripts": {
     "start": "expo start",
@@ -43,6 +43,7 @@
     "@types/react": "~18.2.45",
     "@types/react-native-snap-carousel": "^3.8.11",
     "@types/react-test-renderer": "^18.0.7",
+    "babel-plugin-module-resolver": "^5.0.2",
     "eslint": "^9.8.0",
     "eslint-config-prettier": "^9.1.0",
     "eslint-plugin-prettier": "^5.2.1",
