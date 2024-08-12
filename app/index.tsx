@@ -1,16 +1,19 @@
+import React from 'react';
 import { Stack } from 'expo-router';
+import IntroductionScreen from './(screens)/IntroductionScreen/IntroductionScreen';
 
-import HomeScreen from '@screens/HomeScreen';
+const Test = () => {
+  return (
+    <>
+      <Stack.Screen
+        options={{
+          title: 'My home',
+          headerShown: false,
+        }}
+      />
+      <IntroductionScreen />
+    </>
+  );
+};
 
-const Home = () => (
-  <>
-    <Stack.Screen
-      options={{
-        title: 'My home',
-      }}
-    />
-    <HomeScreen />
-  </>
-);
-
-export default Home;
+export default Test;

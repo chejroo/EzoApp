@@ -2,10 +2,9 @@
   "extends": "expo/tsconfig.base",
   "compilerOptions": {
     "strict": true,
-    "baseUrl": "./",
     "paths": {
       "@app/*": ["./app/*"],
-      "@assets/*": ["./app/assets/*"],
+      "@assets/*": ["./assets/*"],
       "@components/*": ["./app/components/*"],
       "@constants/*": ["./app/constants/*"],
       "@hooks/*": ["./app/hooks/*"],
@@ -18,5 +17,5 @@
     "**/*.tsx",
     ".expo/types/**/*.ts",
     "expo-env.d.ts"
-, "app/screens/IntroScreen"  ]
+  ]
 }

@@ -6,19 +6,17 @@ module.exports = function (api) {
       [
         'module-resolver',
         {
-          root: ['./src'],
           alias: {
             '@app': './app',
-            '@assets': './app/assets',
+            '@assets': './assets',
             '@components': './app/components',
             '@constants': './app/constants',
             '@hooks': './app/hooks',
             '@navigation': './app/navigation',
-            '@screens': './app/screens'
-          }
-        }
+            '@screens': './app/screens',
+          },
+        },
       ],
-      require.resolve('expo-router/babel'),
-    ]
+    ],
   };
 };
